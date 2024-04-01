@@ -6,6 +6,8 @@ import Value from './comp/Value';
 import FoodsApi from './comp/FoodsApi';
 import Parents from './comp/Parents';
 import Children from './comp/Children';
+import Increase from './comp/Increase';
+import Gallery from './comp/Gallery';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
       <Parents>
         <Children/>
       </Parents>
+      <Increase/>
+      <Gallery/>
     </div>
   );
 }
