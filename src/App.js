@@ -4,6 +4,8 @@ import Counter from './comp/Counter';
 import Message from './comp/Message';
 import Value from './comp/Value';
 import FoodsApi from './comp/FoodsApi';
+import Parents from './comp/Parents';
+import Children from './comp/Children';
 
 function App() {
   return (
@@ -17,6 +19,10 @@ function App() {
       <Message txt="Bye" clr="orange"/>
       <hr/>
       <Counter/>
+      <hr/>
+      <Parents>
+        <Children/>
+      </Parents>
     </div>
   );
 }
