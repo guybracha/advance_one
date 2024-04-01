@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>React</h1>
+      <h1 className='text-danger'>React Work</h1>
     </div>
   );
 }
