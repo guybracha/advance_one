@@ -8,7 +8,12 @@ export default function Gallery() {
     <div>
       <img src={"/images/"+pics_ar[counter]} width="200" alt="js"/>
       <br/>
-      <button>Back</button>
+      <button onClick={()=>{
+        setCounter(counter-1)
+        if(counter-1 < 0){
+            setCounter(pics_ar.length-1);
+        }
+      }}>Back</button>
       <button onClick={()=>{
         setCounter(counter+1)
         if(counter+1 > pics_ar.length-1){
