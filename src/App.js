@@ -10,14 +10,15 @@ import Increase from './comp/Increase';
 import Gallery from './comp/Gallery';
 import ApiShop from './comp/ApiShop';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Header from './comp/Header';
 
 function App() {
   return (
     <BrowserRouter>
-      <header>Header</header>
+      <Header />
       <Routes>
-        <Route path='/' element={<Gallery/>}/>
-        <Route path='/shop' element={<ApiShop/>}/>
+        <Route path='/' element={<Gallery />} />
+        <Route path='/shop' element={<ApiShop />} />
       </Routes>
     </BrowserRouter>
   );
