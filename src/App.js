@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="Container">
       <h2 className='text-danger'>React</h2>
+      <Gallery/>
     </div>
   );
 }
