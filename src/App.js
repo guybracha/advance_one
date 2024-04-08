@@ -9,15 +9,17 @@ import Children from './comp/Children';
 import Increase from './comp/Increase';
 import Gallery from './comp/Gallery';
 import ApiShop from './comp/ApiShop';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
   return (
-    <div className="Container">
-      <h2 className='text-danger'>React</h2>
-      <ApiShop/>
-      <hr/>
-      <Gallery/>
-    </div>
+    <BrowserRouter>
+      <header>Header</header>
+      <Routes>
+        <Route path='/' element={<Gallery/>}/>
+        <Route path='/shop' element={<ApiShop/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

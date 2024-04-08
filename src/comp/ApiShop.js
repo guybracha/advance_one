@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 export default function ApiShop() {
-    const [shop_ar,setShotAr] = useState([]);
+    const [shop_ar,setShopAr] = useState([]);
 
     useEffect(() => {
         doApi();
@@ -13,7 +13,7 @@ export default function ApiShop() {
             const resp = await fetch(url);
             const data = await resp.json();
             console.log(data);
-            setShotAr(data);
+            setShopAr(data);
         } catch(error){
             console.log(error);
         }
