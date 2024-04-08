@@ -12,21 +12,7 @@ import Gallery from './comp/Gallery';
 function App() {
   return (
     <div className="Container">
-      <h1 className='text-danger'>React Work</h1>
-      <FoodsApi />
-      <hr/>
-      <Value/>
-      <hr/>
-      <Message txt="Hello" clr="red"/>
-      <Message txt="Bye" clr="orange"/>
-      <hr/>
-      <Counter/>
-      <hr/>
-      <Parents>
-        <Children/>
-      </Parents>
-      <Increase/>
-      <Gallery/>
+      <h2 className='text-danger'>React</h2>
     </div>
   );
 }
