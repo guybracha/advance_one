@@ -6,7 +6,9 @@ export default function Header() {
     <header className='bg-info p-2'>
         <div className='container'>
             <Link to='/'>Home</Link>|
-            <Link to='/shop'>Shop</Link>
+            <Link to='/shop'>Shop</Link>|
+            <Link to='/foods'>Foods</Link>|
+            <Link to='/query?search=dogs'>Query</Link>
         </div>
     </header>
   )
